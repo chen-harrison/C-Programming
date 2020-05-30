@@ -1,5 +1,7 @@
 # C Programming Assignments
 
+<sup>(NOTE: Course and instructor name omitted at his request, likely to prevent future students from finding and referencing this repository for solutions)</sup>
+
 This set of programs can be grouped into robotics-related and general utility/string parsing programs. The robot programs either build on each other or are using a similar infrastructure, while the others were code challenges meant to demonstrate different fundamental coding concepts.
 
 ## Robot:
