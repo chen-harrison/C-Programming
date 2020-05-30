@@ -2,7 +2,7 @@
 
 <sup>(NOTE: Course and instructor name omitted at his request, likely to prevent future students from finding and referencing this repository for solutions)</sup>
 
-This set of programs can be grouped into robotics-related and general utility/string parsing programs. The robot programs either build on each other or are using a similar infrastructure, while the others were code challenges meant to demonstrate different fundamental coding concepts.
+This set of programs can be grouped into robotics-related and general utility/string parsing programs. The robot programs either build on each other or are using a similar infrastructure, while the others were code challenges meant to demonstrate different fundamental coding concepts. While other programming assignments were completed for the course, these were the most interesting and comprehensive of the bunch.
 
 ## Robot:
 ### *collision*
