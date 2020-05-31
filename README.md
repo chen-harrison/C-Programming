@@ -1,4 +1,4 @@
-# C Programming Assignments
+# C Programming Repository
 
 <sup>(NOTE: Course and instructor name omitted at his request, likely to prevent future students from finding and referencing this repository for solutions)</sup>
 
