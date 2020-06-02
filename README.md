@@ -11,23 +11,33 @@ From polygons.csv, takes in the vertices (up to 16), rotation, and translation o
 ### *braitenberg*
 Simulates the behavior of a Braitenberg vehicle (https://en.wikipedia.org/wiki/Braitenberg_vehicle) in an environment with three lamps, complete with collision detection and resolution, and visualizes it in the form of a bitmap image:
 
-<img src="braitenberg/braitenberg.gif" width="400">
+<p align="center">
+  <img src="braitenberg/braitenberg.gif" width="400">
+</p>
 
 ### *chase*
 A runner and chaser robot are placed in a maze layout. The runner performs one of three randomized actions: increase forward velocity, increase counter-clockwise rotational velocity, or do nothing. The chaser, whose goal is to catch the runner, has those same three actions, and a fourth that allows it to increase clockwise rotational velocity. It uses a tree search with a depth of 4 (aka 256 unique outcomes) to determine its best action, with a scoring system that rewards minimal distance to the chaser and high velocities. Different start positions for the chaser robot yield different outcomes (i.e. how many time steps necessary to catch the runner).
 
-<img src="chase/chase.gif" width="400">
+<p align="center">
+  <img src="chase/chase.gif" width="400">
+</p>
 
 ### *manual*
 Takes in keyboard input to make the robot either move forward or rotate.
 
-<img src="manual/manual.gif" width="400">
+<p align="center">
+  <img src="manual/manual.gif" width="400">
+</p>
 
 ### *potential*
 Similar to the robot chase problem, a potential field is used to guide the chaser to the runner. Makeshift GUI is created in the terminal to modify the values pertaining runner start location, maximum velocity, and weight of runner distance and obstacle distances. Number of time steps before the chaser catches the runner is printed in the terminal as well.
 
-<img src="potential/potential.png" width="400">
-<img src="potential/potential.gif" width="400">
+<p align="center">
+  <img src="potential/potential.png" width="400">
+</p>
+<p align="center">
+  <img src="potential/potential.gif" width="400">
+</p>
 
 ## String Parsing:
 ### *bigrams*
@@ -36,9 +46,13 @@ Takes in a .txt file (in our case, Jane Austen's *Pride and Prejudice*) and gene
 ### *cryptogram*
 Program takes in an "encrypt" or "decrypt" command, a password, and a normal string of text. The letters in the password indicate the change that should be applied to the corresponding letters in the string during encryption, i.e. 'a' shifts by 0, 'b' shifts by 1, 'z' shifts by 25, etc. The case (upper or lower) of each letter in the string is preserved, and the password is looped through until the end of the string is reached. Decryption follows similar guidelines, but in the reverse direction.
 
-<img src="cryptogram/cryptogram.png" width="560">
+<p align="center">
+  <img src="cryptogram/cryptogram.png" width="560">
+</p>
 
 ### *spellcheck*
 Uses a ternary search tree to list out suggested spelling corrections given an input word. Accounts for insertion, deletion, replacement, and transposition errors.
 
-<img src="spellcheck/spellcheck.png" width="560">
+<p align="center">
+  <img src="spellcheck/spellcheck.png" width="560">
+</p>
