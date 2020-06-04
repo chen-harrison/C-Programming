@@ -4,11 +4,10 @@
 
 These programs all revolve around the use of a wedge-shaped simulated robot, and either build on each other or use a similar infrastructure to perform various tasks. To view the animations (when applicable), open the ``animation.html `` file in the same folder that holds the program in question.
 
-## Robot:
-### *collision*
+## *collision*
 From ``polygons.csv``, takes in the vertices (up to 16), rotation, and translation of two polygons and determines whether they "collide", which we define as either intersecting or having one shape nested inside of the other.
 
-### *braitenberg*
+## *braitenberg*
 Simulates the behavior of a [Braitenberg vehicle](https://en.wikipedia.org/wiki/Braitenberg_vehicle) in an environment with three lamps, complete with collision detection and resolution.
 - Unit vectors from the vehicle to each lamp are calculated, then the inner product between that vector and the vectors along which the light sensors are facing (``M_PI/3`` radians offset from the front) are used to determine directional movement
 - When robot collides with a lamp, the robot is pushed back a magnitude of 0.5 pixels along the vector between it and the lamp until the collision is resolved
@@ -20,7 +19,7 @@ Simulates the behavior of a [Braitenberg vehicle](https://en.wikipedia.org/wiki/
 
 <img src="media/braitenberg.gif" width="480">
 
-### *chase*
+## *chase*
 A chaser robot pursues a runner robot in a maze while using a tree search to decide its action at each time step.
 - Runner is given three actions to randomly select from:
   - Increase forward velocity
@@ -39,7 +38,7 @@ A chaser robot pursues a runner robot in a maze while using a tree search to dec
 
 <img src="media/chase.gif" width="480">
 
-### *manual*
+## *manual*
 Takes in keyboard input to make the robot either move forward or rotate.
 - I/O threading is used to take in keyboard inputs:
   - Up arrow = increase forward linear acceleration
@@ -50,7 +49,7 @@ Takes in keyboard input to make the robot either move forward or rotate.
 
 <img src="media/manual.gif" width="480">
 
-### *potential*
+## *potential*
 Makeshift GUI in terminal is used to tune parameters of a potential field that leads a chaser robot to the runner. Number of steps required to catch runner is printed in the terminal at the completion of each successful catch.
 - GUI is controlled via arrow keys - left/right to toggle between parameters, up/down to increase/decrease selected parameter
 - The parameters:
