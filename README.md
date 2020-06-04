@@ -9,7 +9,7 @@ From ``polygons.csv``, takes in the vertices (up to 16), rotation, and translati
 - This program is used as a function in all subsequent programs for collision detection and resolution
 
 ## *braitenberg*
-Simulates the behavior of a [Braitenberg vehicle](https://en.wikipedia.org/wiki/Braitenberg_vehicle) in an environment with three lamps, complete with collision detection and resolution.
+Simulates the behavior of a [Braitenberg vehicle](https://en.wikipedia.org/wiki/Braitenberg_vehicle) in an environment with three lamps.
 - Unit vectors from the vehicle to each lamp are calculated, then the inner product between that vector and the vectors along which the light sensors are facing (``M_PI/3`` radians offset from the front) are used to determine directional movement
 - When robot collides with a lamp, the robot is pushed back a magnitude of 0.5 pixels along the vector between it and the lamp until the collision is resolved
 - Location/orientation information for robot is used to generate bitmap image
