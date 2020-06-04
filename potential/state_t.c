@@ -198,11 +198,11 @@ void chaser_action(state_t *state) {
                 free(blockVertices);
                 double chaseDist = sqrt(pow(state->chase.x - blockCenter.x, 2.0) +
                                         pow(state->chase.y - blockCenter.y, 2.0));
-                pt_t chaseVec = {(state->chase.x - blockCenter.x) / chaseDist,
+                pt_t toChase = {(state->chase.x - blockCenter.x) / chaseDist,
                                  (state->chase.y - blockCenter.y) / chaseDist};
                 double radiusDist = fmax(0.1, chaseDist - (ROB_R + WALL_R));
-                force.x += chaseVec.x * state->obsMag * pow(radiusDist, (double)state->obsPow);
-                force.y += chaseVec.y * state->obsMag * pow(radiusDist, (double)state->obsPow);
+                force.x += toChase.x * state->obsMag * pow(radiusDist, (double)state->obsPow);
+                force.y += toChase.y * state->obsMag * pow(radiusDist, (double)state->obsPow);
             }
         }
     }
