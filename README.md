@@ -6,6 +6,7 @@ These programs all revolve around the use of a wedge-shaped simulated robot, and
 
 ## *collision*
 From ``polygons.csv``, takes in the vertices (up to 16), rotation, and translation of two polygons and determines whether they "collide", which we define as either intersecting or having one shape nested inside of the other.
+- This program is used as a function in all subsequent programs for collision detection and resolution
 
 ## *braitenberg*
 Simulates the behavior of a [Braitenberg vehicle](https://en.wikipedia.org/wiki/Braitenberg_vehicle) in an environment with three lamps, complete with collision detection and resolution.
