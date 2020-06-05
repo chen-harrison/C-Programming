@@ -2,7 +2,7 @@
 
 <sup>(NOTE: Course and instructor name omitted at his request, likely to prevent future students from finding and referencing this repository for solutions)</sup>
 
-These programs all revolve around the use of a wedge-shaped simulated robot, and either build on each other or use a similar infrastructure to perform various tasks. To view the bitmap applications (for those applicable), open the ``animation.html `` file located in the same folder that holds the program in question. Firefox worked well for me.
+These programs all revolve around the use of a wedge-shaped simulated robot, and either build on each other or use a similar infrastructure to perform various tasks. To view the bitmap applications (for those applicable), open the ``animation.html`` file located in the same folder that holds the program in question. Firefox worked well for me.
 
 ## *collision*
 From ``polygons.csv``, takes in the vertices (up to 16), rotation, and translation of two polygons and determines whether they "collide", which we define as either intersecting or having one shape nested inside of the other.
