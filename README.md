@@ -1,4 +1,4 @@
-# Tribot Programming
+# Tribot
 
 <sup style="line-height: 0.25em;"><u>NOTE</u>: Course and instructor name omitted at his request, likely to prevent future students from finding and referencing this repository for solutions</sup>
 
