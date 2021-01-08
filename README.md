@@ -1,6 +1,6 @@
 # Tribot Programming
 
-<sup>(NOTE: Course and instructor name omitted at his request, likely to prevent future students from finding and referencing this repository for solutions)</sup>
+<sup style="line-height: 0.25em;"><u>NOTE</u>: Course and instructor name omitted at his request, likely to prevent future students from finding and referencing this repository for solutions</sup>
 
 These programs all revolve around the use of a wedge-shaped simulated robot, and either build on each other or use a similar infrastructure to perform various tasks. To view the bitmap applications (for those applicable), open the ``animation.html`` file located in the same folder that holds the program in question. Firefox worked well for me.
 
@@ -18,7 +18,9 @@ Simulates the behavior of a [Braitenberg vehicle](https://en.wikipedia.org/wiki/
   - Number of time steps to increment forward
   - "fast" indicator (0-1, indicates whether or not to update image)
 
-<img src="media/braitenberg.gif" width="480">
+<p align="center">
+  <img src="media/braitenberg.gif" width="480">
+</p>
 
 ## *chase*
 A chaser robot pursues a runner robot in a maze while using a tree search to decide its action at each time step.
@@ -37,7 +39,9 @@ A chaser robot pursues a runner robot in a maze while using a tree search to dec
   - Initial runner index, which corresponds to the cell index that the runner robot will start in
 - Different start positions for the chaser robot yield different outcomes (how many time steps necessary to catch the runner, whether the chaser gets stuck, etc.)
 
-<img src="media/chase.gif" width="480">
+<p align="center">
+  <img src="media/chase.gif" width="480">
+</p>
 
 ## *manual*
 Takes in keyboard input to make the robot either move forward or rotate.
@@ -48,7 +52,9 @@ Takes in keyboard input to make the robot either move forward or rotate.
   - 'Q' = quit
 - Prints linear and rotational velocity values in terminal
 
-<img src="media/manual.gif" width="480">
+<p align="center">
+  <img src="media/manual.gif" width="480">
+</p>
 
 ## *potential*
 Makeshift GUI in terminal is used to tune parameters of a potential field that leads a chaser robot to the runner. Number of steps required to catch runner is printed in the terminal at the completion of each successful catch.
@@ -63,6 +69,9 @@ Makeshift GUI in terminal is used to tune parameters of a potential field that l
   - ``maxVelocity`` : ``[1, 12]``, max velocity of chaser robot
 - Function ``chaser_action`` in ``state_t.c`` shows how these coefficients and exponents are used to move chaser
 
-<img src="media/potential.png" width="480">
-<img src="media/potential.gif" width="480">
-
+<p align="center">
+  <img src="media/potential.png" width="480">
+</p>
+<p align="center">
+  <img src="media/potential.gif" width="480">
+</p>
